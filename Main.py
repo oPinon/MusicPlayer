@@ -1,5 +1,6 @@
 from Songs import *
 from Player import *
+import Spotify
 
 artist = Artist( "Coldplay" )
 artists = [ artist ] + artist.getSimilarArtists()
