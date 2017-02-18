@@ -1,4 +1,6 @@
 
+NoImpEx = Exception( "Method not implemented : did you import Spotify.py ?" )
+
 class Artist:
 
 	name = None
@@ -11,13 +13,13 @@ class Artist:
 		return str(self.__class__) + " : " + str(self.__dict__)
 
 	# @returns : a String ID
-	def getSpotifyID(self) : raise Exception("Artist.getSongs not implemented")
+	def getSpotifyID(self) : raise NoImpEx
 
 	# @returns : a list of Songs
-	def getSongs( self ) : raise Exception("Artist.getSongs not implemented")
+	def getSongs( self ) : raise NoImpEx
 
 	# @returns : a list of similar artists
-	def getSimilarArtists( self ) : raise Exception("Artist.getSimilarArtists not implemented")
+	def getSimilarArtists( self ) : raise NoImpEx
 
 
 class Song:
@@ -37,4 +39,4 @@ class Song:
 			return self.spotifyID
 		return self.spotifyID
 
-	def getMp3URL(self) : raise Exception("Artist.getMp3URL not implemented")
+	def getMp3URL(self) : raise NoImpEx
